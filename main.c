@@ -4,16 +4,14 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int a,b;
+	int a,b,c;
 	
-	printf("input two integers:");
-	scanf("%i %i", &a, &b);
-	
-	printf("+ result is %i\n", a+b);
-	printf("- result is %i\n", a-b);
-	printf("*result is %i\n",a*b);
-	printf("/result is %i\n",a/b);
-	printf("%%result is %i\n",a%b);
+	printf("input the swcond:");
+	scanf("%i", &a);
+	b=a/60;
+	c=a%60;
+
+	printf("the time is %i : %i\n",b,c);
 	
 	return 0;
 }
